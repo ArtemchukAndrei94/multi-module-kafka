@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/clientdb?currentSchema=my_schema'
+    username: 'client_app'
+    password: 'client_app'
+  jpa:
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.PostgreSQLDialect'
+        default_schema: 'my_schema'
+    show-sql: true
